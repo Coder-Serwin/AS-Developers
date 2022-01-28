@@ -1,7 +1,5 @@
 from flask import Flask , send_file , render_template ,request
-import time
 
-message = "Subject : From AS Developers \n\nThanks for subscribing!"
 app = Flask(__name__)
 p = ""
 Gamename = ""
