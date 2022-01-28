@@ -1,0 +1,8 @@
+body {
+    width: 15px;
+    height: min-content;
+}
+
+.download {
+    position: absolute;
+}
