@@ -35,4 +35,4 @@ def download():
     return send_file(p,as_attachment=True)
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
