@@ -1,1 +1,1 @@
-web: sample main:app
+web: as-developersmain:app
