@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: url("http://thewowstyle.com/wp-content/uploads/2015/02/beautiful_mountain-wide.jpg") center;
 }
 
 nav {
@@ -26,7 +27,7 @@ label.logo {
     position: absolute;
 }
 
-nav ul li a.Home {
+nav ul li a.active {
     background: #1b9bff;
 }
 
@@ -68,21 +69,23 @@ a.active , a:hover {
     display: none;
 }
 
+
 .games {
     display: flex;
     width: 97.5%;
-    justify-content: space-between;
     position: absolute;
+    z-index: -1;
+    justify-content: space-between;
     bottom: 40%;
 }
 
 .name {
     color: greenyellow;
     position: absolute;
+    z-index: -1;
+    height: 30px;
     bottom: 50%;
 }
-
-
 
 @media (max-width: 952px) {
     label.logo {
@@ -107,7 +110,7 @@ a.active , a:hover {
         left: 100%;
         top: 80px;
         text-align: center;
-        transition: all .3s ease;
+        transition: all .9s ease-in-out;
     }
 
     nav ul li {
@@ -118,9 +121,13 @@ a.active , a:hover {
         font-size: 20px;
     }
 
-    a.active , a:hover {
+    a:hover {
         background: none;
         color: #0082e6;
+    }
+
+    a.active {
+        color: white;
     }
 
     #click:checked ~ .checkbtn i::before {
@@ -130,4 +137,8 @@ a.active , a:hover {
     #click:checked ~ ul{
         left: 0;
     }
+
+
 }
+
+
