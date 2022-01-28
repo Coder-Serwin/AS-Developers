@@ -1,1 +1,1 @@
-web: as-developers main:app
+web: gunicorn main:app
