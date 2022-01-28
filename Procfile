@@ -1,1 +1,1 @@
-web: as-developersmain:app
+web: as-developers main:app
