@@ -16,6 +16,11 @@ html,body{
   max-width: 1100px;
   display: flex;
 }
+
+.link {
+  text-decoration: none;
+}
+
 .slider .card{
   flex: 1;
   margin: 0 10px;
@@ -31,9 +36,11 @@ html,body{
   object-fit: cover;
 }
 .slider .card .content{
+  color: black;
   padding: 10px 20px;
 }
 .card .content .title{
+  color: black;
   font-size: 25px;
   font-weight: 600;
 }
@@ -51,18 +58,4 @@ html,body{
   display: block;
   text-align: left;
   margin: 10px 0;
-}
-.card .content .btn button{
-  background: #e74c3c;
-  color: #fff;
-  border: none;
-  outline: none;
-  font-size: 17px;
-  padding: 5px 8px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-.card .content .btn button:hover{
-  transform: scale(0.9);
 }
