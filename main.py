@@ -1,5 +1,6 @@
-from flask import Flask , send_file , render_template ,request
+from flask import Flask , send_file , render_template
 
+message = "Subject : From AS Developers \n\nThanks for subscribing!"
 app = Flask(__name__)
 p = ""
 Gamename = ""
@@ -8,7 +9,7 @@ Gamename = ""
 def home():
     return render_template("Index.html")
 
-@app.route("/games/<GameName>")
+@app.route("/games/<GameName>/")
 def Game(GameName):
     global Gamename
     Gamename = GameName
@@ -24,6 +25,10 @@ def check_path(Gamename):
     else:
         p = ".env"
 
+@app.route("/games/")
+def games():
+    return render_template("games.html")
+
 
 @app.route("/download_file")
 def download_file():
@@ -35,4 +40,4 @@ def download():
     return send_file(p,as_attachment=True)
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
