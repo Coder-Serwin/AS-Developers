@@ -18,12 +18,12 @@ html,body{
 }
 .slider .card{
   flex: 1;
-  margin: 100px 50px;
-  background: #ffffff;
+  margin: 0 10px;
+  background: #fff;
 }
 .slider .card .img{
-  height: 100px;
-  width: 50%;
+  height: 200px;
+  width: 100%;
 }
 .slider .card .img img{
   height: 100%;
