@@ -59,3 +59,10 @@ html,body{
   text-align: left;
   margin: 10px 0;
 }
+
+@media (max-width:858px) {
+  .slider .card {
+    background: rgb(218, 172, 172);
+  }
+
+}
